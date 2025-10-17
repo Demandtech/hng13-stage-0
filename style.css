@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  /* padding: 0 0.5rem; */
+}
+
+.wrapper {
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.avatar-container {
+  text-align: center;
+  align-self: center;
+  height: 250px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.bio {
+  padding: 1rem;
+  text-align: center;
+}
+
+.hubbies-dislikes {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hubbies-dislikes ul {
+  list-style-position: inside;
+}
+.hubbies-dislikes ul li {
+  text-wrap: nowrap;
+  font-size: 0.9rem;
+}
+
+.list-header {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.github-link {
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  display: block;
+  text-align: center;
+  background: #000000;
+  border: 1.5px solid #000000;
+  color: #ffffff;
+
+  text-decoration: none;
+  transition: opacity 300ms, color 300ms, border 300ms;
+}
+
+.time {
+  font-size: 1.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.github-link:hover {
+  opacity: 75%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  padding-bottom: 1rem;
+  list-style: none;
+}
+
+.socials a {
+  color: #555;
+  transition: color 300ms;
+}
+.socials a:hover {
+  color: #000;
+}
+
+@media screen and (min-width: 485px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}
